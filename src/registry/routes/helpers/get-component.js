@@ -437,7 +437,10 @@ module.exports = function(conf, repository) {
                   module: { exports: {} },
                   console: conf.local ? console : { log: _.noop },
                   setTimeout,
-                  Buffer
+                  Buffer,
+                  Object,
+                  Array,
+                  Error,
                 };
 
                 const handleError = err => {
